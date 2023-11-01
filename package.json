@@ -1,9 +1,12 @@
 {
   "name": "ecommerce",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "src": "npm start --prefix ./src",
+    "dev": "concurrently \"npm start\" npm run src\""
   },
   "keywords": [],
   "author": "sarv",
