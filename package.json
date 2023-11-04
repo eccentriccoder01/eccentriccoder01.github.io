@@ -5,8 +5,8 @@
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
-    "src": "npm start --prefix ./src",
-    "dev": "concurrently \"npm start\" npm run src\""
+    "src": "npm start --prefix .",
+    "dev": "concurrently \"npm start\" \"npm run src\""
   },
   "keywords": [],
   "author": "sarv",
